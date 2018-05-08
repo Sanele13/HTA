@@ -4,6 +4,23 @@
     left: 45%;
 }
 
+.container{
+    width: 70%;
+    display: none;
+}
+.radio>label>span{
+    background: #d3d3d3a8;
+    padding-left: 2px;
+}
+
+.results{
+    display: none;
+    padding-top: 2%;
+    padding-left: 2%;
+}
+.result{
+    padding-bottom: 3%;
+}
 @media only screen and (max-width: 768px) {
     #start_button{
         left: 35%;
