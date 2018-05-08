@@ -7,7 +7,10 @@
         <link rel="stylesheet" href="quiz.css" type="text/css">
     </head>
     <body>
-    <button id = "start_button" class="btn btn-lg" onclick="document.getElementById('start_button').style.display='none';document.getElementsByClassName('container')[0].style.display='block'">Start Quiz</button>
+        <!--Start-->
+        <button id = "start_button" class="btn btn-lg">Start Quiz</button>
+
+        <!--The quiz container-->
         <div class="container">
 
             <div class="quiz text-center">
@@ -36,37 +39,39 @@
                     <button class="ml-auto btn">Next</button>
                 </div>
                 <div class="d-flex">
-                    <button id = "submit" class="ml-auto btn btn-success" onclick="document.getElementsByClassName('container')[0].style.display='none';document.getElementsByClassName('results')[0].style.display='block'">Submit</button>
+                    <button id = "submit" class="ml-auto btn btn-success" >Submit</button>
                 </div>
             </div>
         </div>
-            <div class="results">
-                <span>Results</span><br><br>
-                <div class="result">
-                    <span class="question-title">What is the US president's name?</span>
-                    <br><br>
-                    <div class="answers">
-                        <div class="radio">
-                            <label><input type="radio" name="q1" disabled><span>Donald Trump</span></label>
-                            <span>&#x2714;</span>
-                        </div>
 
-                        <div class="radio">
-                            <label><input type="radio" name="q1" checked disabled><span>Sanele Mpangalala</span></label>
-                            <span>&#10007;</span>
-                        </div>
+        <!--Results-->
+        <div class="results">
+            <span>Results</span><br><br>
+            <div class="result">
+                <span class="question-title">What is the US president's name?</span>
+                <br><br>
+                <div class="answers">
+                    <div class="radio" >
+                        <label><input type="radio" name="q1" disabled><span>Donald Trump</span></label>
+                        <span><!--&#x2714;--></span>
+                    </div>
 
-                        <div class="radio">
-                            <label><input type="radio" name="q1" disabled><span>Barrack Obama</span></label>
-                            <span>&#10007;</span>
-                        </div>
+                    <div class="radio">
+                        <label><input type="radio" name="q1" checked disabled><span>Sanele Mpangalala</span></label>
+                        <span><!--&#10007;--></span>
+                    </div>
 
-                        <div class="radio">
-                            <label><input type="radio" name="q1" disabled><span>Osama Bin Laden</span></label>
-                            <span>&#10007;</span>
-                        </div>
+                    <div class="radio">
+                        <label><input type="radio" name="q1" disabled><span>Barrack Obama</span></label>
+                        <span><!--&#10007;--></span>
+                    </div>
+
+                    <div class="radio">
+                        <label><input type="radio" name="q1" disabled><span>Osama Bin Laden</span></label>
+                        <span><!--&#10007;--></span>
                     </div>
                 </div>
-             </div>
+            </div>
+        </div>
     </body>
 </html>
